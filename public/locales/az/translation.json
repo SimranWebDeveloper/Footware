@@ -1,0 +1,39 @@
+{
+    "header":{
+        "0" : "Ana sehive",
+        "1":"Kisi",
+        "2":"Qadin",
+        "3":"Haqqinda",
+        "4":"Elaqe",
+        "5":"Sebete elave et",
+        "6":"Dil/Az"
+
+    },
+    "shop":{
+        "0":"KISILER",
+        "1":"Ayaqqabliar",
+        "2":"KOLLEKSIYALAR",
+        "3":"Yeni trend mehsullar.",
+        "4":"Kişi Kolleksiyasını satın alın",
+        "5":"Qadın Kolleksiyasını satın alın",
+        "6":"Özüm istədiyim məhsulları dizayn etdim."
+    },
+    "bestapi":{
+        "0":"EN YAXSI SATILANLAR"
+    },
+    "sneakers":{
+        "0":"GUNDELIK",
+        "1":"PALTAR",
+        "2":"IDMAN",
+        "3":"INDI Al",
+        "4":"BUTUN MEHSULLA BAX",
+        "5":"MESHUR PARTNYORLARIMIZ"
+    },
+    "about":{
+        "0":"Footwear dünyanın aparıcı e-ticarət mağazasıdır",
+        "1":"Böyük Oxmox ona bunu etməməyi tövsiyə etdi, çünki minlərlə pis Vergüllər, vəhşi Sual İşarələri və hiyləgər Semikoli var idi, lakin Kiçik Kor Mətn qulaq asmadı. O, yeddi versaliyasını yığdı, ilkini kəmərə taxdı və yolda özünü etdi.İtalik dağlarının ilk təpələrinə çatanda o, doğma şəhəri Bookmarksgrove səma xəttinə, Əlifba kəndinin başlığına və öz yolunun alt xəttinə, Xətt zolağına son baxışı oldu. Yazıq yanağından retorik bir sual keçdi, sonra yoluna davam etdi."
+    },
+    "advertising":{
+        "0":"HƏR ŞEYƏ 25% ENDİRİM (Demək olar ki,)! İSTİFADƏ KODU: YAY ENDİRİMİ"
+    }
+}

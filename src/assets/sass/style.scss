@@ -1,0 +1,191 @@
+.body{
+  overflow: hidden !important;
+}
+
+
+    .searchIcon{
+      background-color: #88C8BC !important;
+    }
+
+
+
+//  For desktop
+@media screen and (min-width: 576px) {
+
+
+  .hide-menu{
+    display: none !important;
+  
+ 
+  }
+
+}
+//  For mobile
+@media screen and (max-width: 576px) {
+
+  #ulnav{
+    display: none !important;
+  }
+  #cardBtn{
+    display: none ;
+
+  }
+
+}
+
+
+
+.hide-menu{
+  transform: translateX(100%);
+  width: 280px;
+  height: 80vh;
+  background-color: #000;
+  color: #fff;
+  transition: all 2s ease;
+  position: fixed !important;
+  display: block;
+  top: 0;
+  right: 0;
+
+}
+
+.menu{
+  width: -130px;
+  height: 60px;
+  background-color: silver;
+  transition: all .3s ease;
+  transform: translateX(100%);
+  display: none !important;
+
+}
+
+
+// advertising
+.advertising{
+  div{
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    background: #88C8BC;
+  }
+
+}
+
+// shoes
+.shoes{
+  height: 600px;
+  background-image: url('https://preview.colorlib.com/theme/footwear/images/img_bg_1.jpg.webp');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.design{
+  .design-image{
+    height: 500px ;
+  }
+}
+
+
+.bestapi{
+  .text-seller{
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+  }
+}
+
+footer{
+  
+}
+
+.logo{
+  width: 100%;
+  height: 50vh;
+}
+
+
+// Seakers
+.sneakers{
+  .bgSilver{
+  background: #333;
+  width: 100%;
+  height: 60px;
+}
+#sneakersImg{
+
+  height: 400px !important;
+
+}
+}
+
+// about
+.about{
+  .aboutImg{
+    height: 400px;
+
+
+  .aboutBtn{
+    background-color: #88C8BC;
+    color: #fff;
+    transition: 1s;
+
+
+    .pb-2{
+      width: 50px;
+      height: 50px;
+    
+    }
+  }
+  .hoverImg{
+    transition: 1s;
+  }
+
+    &:hover{
+      .hoverImg{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0,.5);
+        z-index: 5 !important;
+
+      }
+      .aboutBtn{
+        scale: 1.3;
+      }
+
+    }
+  }
+}
+
+
+.contact{
+  form{
+    background-color: #F5F5F5;
+  }
+}
+
+.slider{
+  height: 300px !important;
+  img{
+    width: 100% ;
+    height: 300px !important;
+    object-fit: contain;
+  }
+}
+
+// Dark - Light mode
+
+.dark {
+  --bgColor: #333;
+  --Color:#fff;
+}
+.light{
+  --bgColor:#fff;
+  --Color:#333;
+}
+
+.header-section,.home-section,.men-section,.women-section,.about,.contact,.addtocard,.footer-section{
+  background: var(--bgColor);
+  color: var(--Color);
+}
+
+

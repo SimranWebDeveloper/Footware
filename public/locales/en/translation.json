@@ -1,0 +1,41 @@
+{
+    "header":{
+        "0" : "Home",
+        "1":"Men",
+        "2":"Women",
+        "3":"About",
+        "4":"Contact",
+        "5":"AddToCard",
+        "6":"Lan/En"
+
+    },
+    "shop":{
+        "0":"MEN'S",
+        "1":"SHOES",
+        "2":"COLLECTİON",
+        "3":"New trending shoes",
+        "4":"designed products that I wanted myself.",
+        "5":"Shop Men's Collection",
+        "6":"Shop Women's Collection"
+    },
+    "bestapi":{
+        "0":"BEST SELLER"
+    },
+    "sneakers":{
+        "0":"CASUALS",
+        "1":"DRESS",
+        "2":"SPORTS",
+        "3":"SHOP NOW",
+        "4":"VIEW ALL PRODUCTS",
+        "5":"TRUSTED PARTNERS"
+    },
+    "about":{
+        "0":"Footwear dünyanın aparıcı e-ticarət mağazasıdır",
+        "1":"The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way."
+
+    },
+    "advertising":{
+        "0":"25% OFF (ALMOST) EVERYTHING! USE CODE: SUMMER SALE"
+    }
+
+}
