@@ -6,11 +6,14 @@ import Logo from '../Logo'
 import OwnCarusel from '../OwnCarusel/OwnCarusel'
 
 
+
+
 const Home = () => {
 
   return (
     <>
     <section className='home-section'>
+  
     <Shoes/>
       <OwnCarusel/>
       <BestApi/>

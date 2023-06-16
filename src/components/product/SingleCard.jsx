@@ -1,4 +1,7 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
+
 
 const SingleCard = ({product}) => {
   return (
@@ -8,6 +11,7 @@ const SingleCard = ({product}) => {
             <div className="card-body">
                 <h5 className="card-title">{product.name}</h5>
             </div>
+            <NavLink  className='btn btn-danger'> ad to wish</NavLink>
         </div>
     </div>
   )

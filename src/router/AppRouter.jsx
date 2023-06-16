@@ -17,6 +17,7 @@ import { ToastContainer} from 'react-toastify';
 import { GlobalThemeContext } from "../components/context/ThemeContext";
 
 
+
 const AppRouter = () => {
   const[isOpen,setIsOpen]=useState(false)
 
@@ -53,6 +54,7 @@ const AppRouter = () => {
               <Route  path="/about" element={<About/>}/>
               <Route  path="/contact" element={<Contact/>}/>
               <Route  path="/tocard" element={<AddToCard/>}/>
+              
           </Routes>
           <Footer/>
           <Scroll />
