@@ -1,5 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import WishListBtn from '../WishListBtn'
+
+
+
 
 
 
@@ -11,7 +15,11 @@ const SingleCard = ({product}) => {
             <div className="card-body">
                 <h5 className="card-title">{product.name}</h5>
             </div>
-            <NavLink  className='btn btn-danger'> ad to wish</NavLink>
+            <div className='d-flex justify-content-around'>
+              <span><NavLink  className='btn fw-semibold' to={`/product/${product.id}`}>read more.. </NavLink></span>
+              <WishListBtn product={product}/>
+            </div>
+
         </div>
     </div>
   )

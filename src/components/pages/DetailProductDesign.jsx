@@ -7,15 +7,11 @@ const DetailProductDesign = ({product}) => {
             <div>
             <img src={product.image} className="" alt={product.name} />
             </div>
-            <div className="">
-                <h5 className="">{product.name}</h5>
-                <p>{product.make_id}</p>
-                <p>{product.make_id}</p>
-                <p>{product.make_id}</p>
-                <p>{product.make_id}</p>
-                <p>{product.make_id}</p>
-                <p>{product.make_id}</p>
-                <p>{product.make_id}</p>
+            <div className="p-3">
+                <h3 className="">{product.name}</h3>
+                <p>{product.price}</p>
+                <p>{product.des}</p>
+
                 
             </div>
         </div>

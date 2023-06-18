@@ -8,14 +8,21 @@ import { useCart } from "react-use-cart";
 import { GlobalThemeContext } from "../components/context/ThemeContext";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n/i18n";
+import { useWishlist } from "react-use-wishlist";
 
 
 
 function Header2({isOpen,setIsOpen}) {
   const{totalItems}=useCart()
+  useEffect(()=>{
+
+  },[totalItems])
   const{darkMode,setDarkMode,toggleTheme}=useContext(GlobalThemeContext)
 
   const { t }=useTranslation()
+
+  const{totalWishlistItems}=useWishlist()
+
   const handleClick = (lang) => {
     i18n.changeLanguage(lang)
   }
@@ -65,8 +72,15 @@ function Header2({isOpen,setIsOpen}) {
               <li className="me-4" ><NavLink className="nav-link" to='/tocard'>
                 {t("header.5")}
                 {totalItems !=0 ?  <sup  className="bg-success px-1 rounded  text-light" >{totalItems}</sup>: null} 
+                </NavLink>
+              </li>
+              
+              <li className="me-4" ><NavLink className="nav-link" to='/wishlist'>
+                WishList
+                <span><sup className="bg-danger text-white p-1 rounded">{totalWishlistItems}</sup></span>
                 </NavLink></li>
-                {/* Fark Mode */}
+              
+                {/* dark Mode */}
                 <li className="me-4" >
                     {
                       JSON.parse(darkMode) ? 

@@ -15,6 +15,9 @@ import Scroll from '../common/scroll'
 import AddToCard from "../components/pages/AddToCard";
 import { ToastContainer} from 'react-toastify';
 import { GlobalThemeContext } from "../components/context/ThemeContext";
+import DetailPages from "../components/pages/DetailPages";
+import WishList from "../components/pages/Wishlist";
+
 
 
 
@@ -54,6 +57,8 @@ const AppRouter = () => {
               <Route  path="/about" element={<About/>}/>
               <Route  path="/contact" element={<Contact/>}/>
               <Route  path="/tocard" element={<AddToCard/>}/>
+              <Route path="/product/:id" element={<DetailPages/>}/>
+              <Route path="/wishlist" element={<WishList/>} />
               
           </Routes>
           <Footer/>
