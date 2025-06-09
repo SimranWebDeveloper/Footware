@@ -7,25 +7,19 @@
       background-color: #88C8BC !important;
     }
 
-
-
-//  For desktop
-@media screen and (min-width: 576px) {
-
-
-  .hide-menu{
-    display: none !important;
-  
- 
-  }
-
+    
+    
+// Header
+@media screen and (min-width: 992px) {
+  #ulnav{
+  width: 400px;
 }
+}
+
+
 //  For mobile
 @media screen and (max-width: 576px) {
 
-  #ulnav{
-    display: none !important;
-  }
   #cardBtn{
     display: none ;
 
@@ -36,7 +30,6 @@
 
 
 .hide-menu{
-  transform: translateX(100%);
   width: 280px;
   height: 80vh;
   background-color: #000;
@@ -46,7 +39,14 @@
   display: block;
   top: 0;
   right: 0;
+  
+}
 
+
+
+.hide-menu li:hover{
+
+  border-bottom: 2px solid #fff;
 }
 
 .menu{

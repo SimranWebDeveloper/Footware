@@ -9,10 +9,8 @@ const AddToCard = () => {
   const{items,cartTotal,totalUniqueItems,removeItem,updateItemQuantity,setItems,isEmpty}=useCart()
   // if (isEmpty) return <p>Your cart is empty</p>;
   return (
-    <section className='addtocard'>
-     <Cards/>
-
-     <hr />
+    <section className='addtocard overflow-hidden'>
+      <br />
      <div className='container'>
 
      
@@ -59,7 +57,7 @@ const AddToCard = () => {
 
             <h2>{Math.round(cartTotal) }</h2>
             <p>{totalUniqueItems}</p>
-            <button className='btn btn-success' onClick={()=>setItems([])}>Buy Now</button>
+            <button className='btn btn-success text-nowrap' onClick={()=>setItems([])}>Buy Now</button>
 
           </tbody>
         </table>
@@ -67,6 +65,9 @@ const AddToCard = () => {
       }
 
     </div>
+     <hr />
+     <Cards/>
+
     </section>
   )
 }

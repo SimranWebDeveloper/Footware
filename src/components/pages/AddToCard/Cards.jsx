@@ -5,7 +5,6 @@ import Aos from 'aos'
 
 const Cards = () => {
     const{cards,setCards}=useContext(GlobalContext)
-    // console.log(cards);
     Aos.init({
         duration:1000,
     })
