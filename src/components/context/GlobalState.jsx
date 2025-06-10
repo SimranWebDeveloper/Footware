@@ -8,6 +8,8 @@ export const GlobalContext=createContext();
 export const ContextProvider= ({children}) => {
     const[data,setData]=useState(products)
     const[cards,setCards]=useState([])
+    const[productCount,seProductCount]=useState(4);
+
     useEffect(()=>{
         axios.get('https://example-data.draftbit.com/cars?_limit=10')
         .then(res=>{
@@ -17,8 +19,15 @@ export const ContextProvider= ({children}) => {
             )
     },[])
 
+    const increaseProductCount= ()=>{
+        seProductCount((count)=>count+=4);
+    }
+
+
+
+
     return (
-        <GlobalContext.Provider value={{data,setData,cards,setCards}} >
+        <GlobalContext.Provider value={{data,setData,cards,setCards,productCount,increaseProductCount}} >
             {children}
         </GlobalContext.Provider>
         

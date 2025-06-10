@@ -10,6 +10,9 @@
         "7":"WishList"
 
     },
+    "home":{
+        "0" : "Show all products"
+    },
     "shop":{
         "0":"MEN'S",
         "1":"SHOES",

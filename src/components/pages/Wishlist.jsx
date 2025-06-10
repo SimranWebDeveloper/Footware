@@ -33,24 +33,24 @@ const WishList = () => {
 
 
   return (
-    <div className='container'>
-      <h3 className='text-center bg-info text-white py-3 my-3'> Your wishlist</h3>
-      <div className='row'>
+    <section className='wishlist-section '>
+      <div className='container py-3'>
+        <h3 className='text-center bg-info text-white py-3 '> Your wishlist</h3>
+        <div className='row'>
 
-        {
-          (filterWishList()).map((element, index) => {
-              return <SingleCard product={element}/>;
-          })  
-        }
+          {
+            (filterWishList()).map((element, index) => {
+                return <SingleCard product={element}/>;
+            })  
+          }
 
-
+        </div>
+        <button className='btn btn-danger mt-3' onClick={()=>{setWishlistItems([])}}> Clear All wishlist</button>
 
 
       </div>
-      <button className='btn btn-danger ' onClick={()=>{setWishlistItems([])}}> Clear All wishlist</button>
 
-
-    </div>
+    </section>
   )
 }
 

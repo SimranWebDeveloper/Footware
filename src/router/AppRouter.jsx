@@ -17,6 +17,7 @@ import { ToastContainer} from 'react-toastify';
 import { GlobalThemeContext } from "../components/context/ThemeContext";
 import DetailPages from "../components/pages/DetailPages";
 import WishList from "../components/pages/Wishlist";
+import SearchResults from "../components/SearchResults";
 
 
 
@@ -52,6 +53,8 @@ const AppRouter = () => {
           <Advertising />
           <Routes>
               <Route path="/" element={<Home/>} />
+              <Route path="/search" element={<SearchResults />} />
+
               <Route  path="/men" element={<Men/>}/>
               <Route  path="/women" element={<Women/>}/>
               <Route  path="/about" element={<About/>}/>

@@ -4,7 +4,6 @@ export const GlobalThemeContext=createContext();
 
 export const ThemeProvider = ({children}) => {
     const[darkMode,setDarkMode]=useState(localStorage.getItem('darkMode') ? JSON.parse(localStorage.getItem('darkMode')) :false )
-    console.log(localStorage.getItem('darkMode'));
     
     const toggleTheme = () => {
         setDarkMode(!darkMode)

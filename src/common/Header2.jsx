@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import { GiHamburgerMenu, GiCircleForest } from "react-icons/gi";
 import { FiSun,FiMoon } from 'react-icons/fi';
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useCart } from "react-use-cart";
 import { GlobalThemeContext } from "../components/context/ThemeContext";
 import { useTranslation } from "react-i18next";
@@ -28,6 +28,18 @@ function Header2({isOpen,setIsOpen}) {
   }
 
 
+    const [query, setQuery] = useState("");
+    const navigate = useNavigate();
+
+
+    const handleSearch = (e) => {
+    e.preventDefault();
+    if (query.trim() !== "") {
+      navigate(`/search?q=${encodeURIComponent(query)}`);
+    }
+  };
+
+
 
 
   return (
@@ -43,12 +55,13 @@ function Header2({isOpen,setIsOpen}) {
 
           {/* Search */}
           <div className="d-lg-flex jus d-none w-100 justify-content-end ">
-            <form className=" d-flex justify-content-between align-items-center rounded-pill border" style={{height:"fit-content"}}>
+            <form onSubmit={handleSearch} className=" d-flex justify-content-between align-items-center rounded-pill border" style={{height:"fit-content"}}>
               <input
                 type="text"
                 className="form-control rounded-start-pill border-0 me-2"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
+                onChange={(e) => setQuery(e.target.value)}
               />
               <button
                 type="submit"

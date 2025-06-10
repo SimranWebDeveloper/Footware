@@ -9,7 +9,7 @@ const Women = () => {
   const {t}=useTranslation()
   return (
 
-    <section className='women-section'>
+    <section className='women-section' style={{padding:'1px'}}>
       <Slider/>
       <Sneakers/>
       <MyProduct/>

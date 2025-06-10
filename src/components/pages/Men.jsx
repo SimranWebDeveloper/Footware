@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next'
 const Men = () => {
   const {t}=useTranslation()
   return (
-    <section className='men-section'>
+    <section className='men-section ' style={{padding:'1px'}} >
     
       <Slider/>
       <Sneakers/>
