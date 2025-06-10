@@ -31,7 +31,7 @@
 
 .hide-menu{
   width: 280px;
-  height: 80vh;
+  height: 100vh;
   background-color: #000;
   color: #fff;
   transition: all 2s ease;
@@ -44,15 +44,11 @@
 
 
 
-.hide-menu li:hover{
 
-  border-bottom: 2px solid #fff;
-}
 
 .menu{
   width: -130px;
   height: 60px;
-  background-color: silver;
   transition: all .3s ease;
   transform: translateX(100%);
   display: none !important;

@@ -31,6 +31,12 @@ function Header2({isOpen,setIsOpen}) {
     const [query, setQuery] = useState("");
     const navigate = useNavigate();
 
+    // Enter düyməsini basanda formun göndərilməsinin qarşısını alır
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+    }
+  };
 
     const handleSearch = (e) => {
     e.preventDefault();
@@ -62,9 +68,10 @@ function Header2({isOpen,setIsOpen}) {
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 onChange={(e) => setQuery(e.target.value)}
+                onKeyPress={handleKeyPress}
               />
               <button
-                type="button"
+                type="submit"
                 className="searchIcon  border-0 rounded-circle py-2 px-3"
               >
                 <i className="fa-solid fa-magnifying-glass text-light"></i>
