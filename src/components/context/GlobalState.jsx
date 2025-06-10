@@ -22,12 +22,15 @@ export const ContextProvider= ({children}) => {
     const increaseProductCount= ()=>{
         seProductCount((count)=>count+=4);
     }
+    const resetProductCount= ()=>{
+        seProductCount(4);
+    }
 
 
 
 
     return (
-        <GlobalContext.Provider value={{data,setData,cards,setCards,productCount,increaseProductCount}} >
+        <GlobalContext.Provider value={{data,setData,cards,setCards,productCount,increaseProductCount,resetProductCount}} >
             {children}
         </GlobalContext.Provider>
         

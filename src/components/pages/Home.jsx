@@ -13,8 +13,10 @@ import { GlobalContext } from '../context/GlobalState'
 const Home = () => {
 
   const { t }=useTranslation()
-  const{data,productCount,increaseProductCount}=useContext(GlobalContext)
-
+  const{data,productCount,increaseProductCount,resetProductCount}=useContext(GlobalContext)
+    useEffect(()=>{
+      resetProductCount();
+    },[])
   
   return (
     <>

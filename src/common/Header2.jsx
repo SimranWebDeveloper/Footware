@@ -64,7 +64,7 @@ function Header2({isOpen,setIsOpen}) {
                 onChange={(e) => setQuery(e.target.value)}
               />
               <button
-                type="submit"
+                type="button"
                 className="searchIcon  border-0 rounded-circle py-2 px-3"
               >
                 <i className="fa-solid fa-magnifying-glass text-light"></i>
