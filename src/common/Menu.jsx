@@ -9,7 +9,23 @@ import { GlobalThemeContext } from "../components/context/ThemeContext";
 import { FiSun,FiMoon } from 'react-icons/fi';
 import { NavLink } from "react-router-dom";
 
+// for chenck screen size
 const Menu = ({ isOpen,setIsOpen }) => {
+  useEffect(() => {
+    
+  const handleResize = () => {
+    if (window.innerWidth >= 992) {
+      setIsOpen(false);
+    }
+  };
+
+  window.addEventListener("resize", handleResize);
+  handleResize(); // ilkin yoxlama
+
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
+
 
     const{darkMode,setDarkMode,toggleTheme}=useContext(GlobalThemeContext)
   
@@ -27,7 +43,7 @@ const {t}=useTranslation()
   }
 
   return (
-    <div className={isOpen ? "hide-menu fixed-top " : "menu"}>
+    <div id="hamburger-menu" className={isOpen ? "hide-menu fixed-top " : "menu"}>
       <div className="position-relative">
           <h1 className="fs-3 bg-success">
           <img className="me-2" src="https://redshoesrock.com/wp-content/uploads/2018/05/red-shoes-high-tops.png?w=60" alt=""  />
